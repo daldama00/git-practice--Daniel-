@@ -1,7 +1,7 @@
-import profile
 
 
-@profile
+
+
 def expensive_op(n):
     total = 0
     total = n * sum(range(1000))
