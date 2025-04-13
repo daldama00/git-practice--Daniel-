@@ -9,10 +9,7 @@ def expensive_op(n):
 
 
 def slow_func(lst):
-    result = []
-    for i in range(len(lst)):
-        result.append(expensive_op(i))
-    return result
+    return [expensive_op(i) for i in range(len(lst))]
 
 
 def main():
