@@ -1,10 +1,10 @@
+import profile
 
 
-
+@profile
 def expensive_op(n):
     total = 0
-    for i in range(1000):
-        total += i * n
+    total = n * sum(range(1000))
     return total
 
 
