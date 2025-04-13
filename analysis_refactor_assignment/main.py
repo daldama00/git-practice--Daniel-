@@ -1,19 +1,12 @@
-import math
-import random
 
 
+@profile
 def expensive_op(n):
-    total = 0
-    for i in range(1000):
-        total += i * n
-    return total
+    return n * (n - 1) * 500
 
 
 def slow_func(lst):
-    result = []
-    for i in range(len(lst)):
-        result.append(expensive_op(i))
-    return result
+   return [expensive_op(i) for i in range(len(lst))]
 
 
 def unused_function():
