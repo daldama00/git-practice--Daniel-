@@ -15,13 +15,6 @@ def slow_func(lst):
     return result
 
 
-def unused_function():
-    x = 10
-    y = 20
-    z = x + y
-    return z
-
-
 def main():
     numbers = list(range(1000))
     output = slow_func(numbers)
